@@ -1,0 +1,6 @@
+
+# 查看安装版本
+cargo --version
+
+# 新建cargo 项目
+cargo new hello_cargo

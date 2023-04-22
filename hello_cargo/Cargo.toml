@@ -1,0 +1,18 @@
+# cargo 的配置文件格式 这个配置文件可以自定义
+# 区域标题，配置package的
+[package]
+# 项目名
+name = "hello_cargo"
+# 项目版本
+version = "0.1.0"
+# rust 版本
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# 当前项目的依赖项
+[dependencies]
+
+
+
+
