@@ -4,3 +4,10 @@ cargo --version
 
 # 新建cargo 项目
 cargo new hello_cargo
+cargo new guessing_game
+
+# 运行这个项目
+cargo run 
+
+cargo update
+
