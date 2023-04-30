@@ -11,3 +11,6 @@ cargo run
 
 cargo update
 
+cargo new adder --lib
+
+where cargo 
