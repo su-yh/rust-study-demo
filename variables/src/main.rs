@@ -32,6 +32,8 @@ fn main() {
     println!("spaces: {}", spaces);
 
     match_func();
+
+    array_demo();
 }
 
 fn match_func() {
@@ -59,4 +61,18 @@ fn match_func() {
             println!("number is not divisible by 4, 3 or 2");
         },
     }
+}
+
+// 数组下标越界在编译时不会报错，只有在运行的时候才会检查，并报错，最终引起panic
+fn array_demo() {
+    let a = [1, 2, 33, 4, 5];
+    println!("a[0]: {}", a[0]);
+
+    // 声明一个数组，指定这个数组元素的类型是i32 类型，同时指定数组长度为5 
+    let b: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("b[0]: {}", b[0]);
+
+    // 声明并初始化一个数组，这个数组的所有值都是0，并且一共有5 个元素
+    let c = [0; 5];
+    println!("c[0]: {}", c[0]);
 }
