@@ -3,12 +3,18 @@
 cargo --version
 
 # 新建cargo 项目
+# 这里创建出来的项目不管是二进制的还是库的都被称作crate 
 cargo new hello_cargo
 cargo new guessing_game
+
+# 构建这个项目
+# 首次执行这个命令会创建一个Cargo.lock 文件
+cargo build
 
 # 运行这个项目
 cargo run 
 
+# 更新依赖版本，当Cargo.toml 中依赖的版本变化了之后，可以执行以下命令进行更新。
 cargo update
 
 cargo new adder --lib
